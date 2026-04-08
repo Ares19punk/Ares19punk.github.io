@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Eduardo Pérez</title>
     <link rel="shortcut icon" href="./img/images.png">   
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+    <!--Aquí va el encabezado de la pagina web-->
     <header>
         <h1>Eduardo Pérez López</h1>
         <h2>Portafolio personal</h2>
     </header>
+    <!--Menu de navegación-->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="mascotas.html">Mascotas</a></li>
+            <li><a href="src/view/mascotas.html">Mascotas</a></li>
+            <li><a href="#presentacion">Ver presentación</a></li>
+            <li><a href="#intereses">Ver intereses</a></li>
+            <li><a href="#aprendizaje">Ver ruta de aprendizaje</a></li>
+            <li><a href="#enlace">Ver enlace</a></li>
+            <li><a href="#contacto">Ver ruta de comunicación</a></li>
         </ul>
     </nav>
+    <!--Contenido principal de la pagina web-->
     <main>
         <section id="presentacion">
             <p>Hola, soy Eduardo, apasionado por la tecnologia cyberpunk con conocimientos en programación
@@ -25,10 +35,10 @@
         </section>
         <section>
             <h2>Mi estilo visual</h2>
-            <img src="../../public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk">
+            <img src="./public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk" width="768" height="" >
         </section>
         <section>
-            <h2>Mis intereses</h2>
+            <h2 id="intereses">Mis intereses</h2>
             <h3>Mis lenguajes favoritos</h3>
             <ul>
                 <li>Python</li>
@@ -44,7 +54,7 @@
             </ul>
         </section>
         <section>
-            <h2>Mi ruta de aprendizaje</h2>
+            <h2 id="aprendizaje">Mi ruta de aprendizaje</h2>
             <ol>
                 <li>Dominar logica con Python</li>
                 <li>Dominar HTML</li>
@@ -55,13 +65,24 @@
             </ol>
         </section>
          <section>
-            <h2>Mis enlaces</h2>
+            <h2 id="enlace">Mis enlaces</h2>
             <a class="enlace-navegacion" href="mascotas.html">Ver mi página de mascotas</a>
             <div>
                 <a class="enlace-contacto" href="https://github.com/Ares19punk" target="_blank">GitHub Arespunk</a>
                 <a class="enlace-contacto" href="mailto:arespunk@ejemplo.com">Envíame un correo</a>
             </div>
-            
+        </section>
+        <section id="contacto">
+            <h2>Escribeme</h2>
+            <form>
+                <label for="nombre" >Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre..." name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" placeholder="Escribe tu correo..." name="correo" required>
+                <label for="mensaje" >Mensaje:</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje..." name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>

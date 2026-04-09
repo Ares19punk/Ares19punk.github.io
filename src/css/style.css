@@ -1,9 +1,11 @@
 *{
-    margin:0
-
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
+  
     --color-fondo: #0a0a0f;
     --color-fondo-secundario: #11111b;
     --color-panel: #1a1a2e;
@@ -14,10 +16,12 @@
     --color-neon-purple: #9d4edd;
     --color-neon-green: #39ff14;
     --color-neon-yellow: #ffe600;
-    --color-neon-orange: #ef752f;
+    --color-neon-orange: #e4603f;
+    --color-neon-oranged:rgb(227, 57, 14)f;
+    --color-neon-darkblue: #107594;
 
-    --color-texto-principal: #f5f5f5;
-    --color-texto-secundario: #b8b8d1;
+    --color-texto-principal: #d86b4d;
+    --color-texto-secundario: #e2e2ea;
     --color-texto-apagado: #7a7a93;
 
     --color-hover: #00c2ff;
@@ -25,12 +29,17 @@
 
     --font-title: "Orbitron", "Exo 2", "Rajdhani", sans-serif;
     --font-system: "Share Tech Mono", "Courier New", monospace;
+    --font-terminal: "VT323", "Share Tech Mono", "Courier New", monospace;
     --font-tech: "Audiowide", "Orbitron", sans-serif;
+    
 }
+
+
 
 header {
     background-color: var(--color-panel);
-
+    border: 1px solid var(--color-panel);
+    box-shadow: 0 0 10px var(--color-neon-cyan);
 }
 
 body {
@@ -39,32 +48,38 @@ body {
   
 }
 
+/*Definir texto base para h1, h2 y h3 */
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+/*Definir texto base para p, li */
+p, li {
+  font-family: var(--font-terminal);
+}
 h1 {
   color: var(--color-texto-principal);
-  text-shadow: 0 0 8px var(--color-neon-pink);
-  font-family: var(--font-title);
+  -webkit-text-stroke: 2px var(--color-neon-orange);
+  text-shadow: 0 0 15px var(--color-neon-orange);
 }
 
 h2{
-  color: var(--color-texto-principal);
+  color: var(--color-texto-secundario);
+  -webkit-text-stroke: 1px var(--color-neon-orange);
   text-shadow: 0 0 8px var(--color-neon-orange);
-  font-family: var(--font-title);
 }
 
 h3{
-    color: var(--color-texto-principal);
-  text-shadow: 0 0 8px var(--color-neon-yellow);
-  font-family: var(--font-title);
+    color: var(--color-texto-secundario);
+    text-shadow: 0 0 8px var(--color-neon-orange);
 }
 
 p {
-    color: var(--color-texto-apagado);
-    
+    color: var(--color-neon-darkblue);
 }
 
 li {
     color: var(--color-texto-apagado);
-
 }
 
 

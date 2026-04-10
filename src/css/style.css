@@ -17,7 +17,6 @@
     --color-neon-green: #39ff14;
     --color-neon-yellow: #ffe600;
     --color-neon-orange: #e4603f;
-    --color-neon-oranged:rgb(227, 57, 14)f;
     --color-neon-darkblue: #107594;
 
     --color-texto-principal: #d86b4d;
@@ -35,11 +34,72 @@
 }
 
 
-
+/* Se definio borde, espacio interno y espacio externo para header, nav, sction, footer, body */
 header {
-    background-color: var(--color-panel);
-    border: 1px solid var(--color-panel);
+    background-color: var(--color-borde);
+    border: 1px solid var(--color-neon-cyan);
     box-shadow: 0 0 10px var(--color-neon-cyan);
+    padding: 24px;
+    margin: 20px;
+}
+
+nav {
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-fondo-secundario);
+}
+
+  nav ul{
+    list-style: none;
+  }
+
+  nav li{
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    color: var(--color-neon-cyan);
+    text-decoration: none;
+    font-family: var(--font-system);
+  }
+
+  nav a:hover {
+    color: var(--color-hover);
+    text-shadow: 0 0 10px var(--color-neon-orange);
+  }
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Modificacion de imagen de Eduardo programando en un entorno Cyber punk*/
+#eduardo-cyberpunk {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-neon-cyan);
+  box-shadow: 0 0 20px var(--color-neon-pink);
+  border-radius: 20px;
+
+}
+
+section{
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-panel);
+
+}
+
+footer{
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-borde);
+
 }
 
 body {

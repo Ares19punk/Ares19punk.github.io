@@ -86,6 +86,10 @@ nav {
 
   nav ul{
     list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
   }
 
   nav li{
@@ -179,6 +183,42 @@ li {
 }
 
 
+/*Estilos aplicados para formularios*/
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+label {
+  font-family: var(--font-terminal);
+  color: var(--color-texto-secundario);
+  -webkit-text-stroke: 1px var(--color-texto-apagado);
+}
+
+input {
+  font-family: var(--font-terminal);
+  font-size: 15px;
+  width: 200px;
+  border: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--color-fondo) 0px,
+    var(--color-fondo) 4px,
+    var(--color-neon-green-rgba) 4px,
+    var(--color-neon-green-rgba) 6px
+  );   
+}
+
+textarea {
+  background-color: var(--color-fondo-secundario);
+  font-family: var(--font-terminal);
+  font-size: 15px;
+  width: 200px;
+}
+
 button {
   background-color: var(--color-panel);
   color: var(--color-neon-cyan);
@@ -190,3 +230,37 @@ button:hover {
   background-color: var(--color-hover);
   color: var(--color-fondo);
 }
+
+/*Estilo aplicado para la sección mascota*/
+
+figcaption {
+  font-family: var(--font-terminal);
+  color: var(--color-neon-cyan);
+}
+
+section figure {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border: 1px solid var(--color-neon-cyan);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--color-fondo) 0px,
+    var(--color-fondo) 4px,
+    var(--color-neon-green-rgba) 4px,
+    var(--color-neon-green-rgba) 6px)
+    
+}
+
+figure div {
+  display: flex;
+  flex-direction: column;
+  border: 0.1px solid var(--color-neon-cyan);
+  align-items: center;
+}
+
+
+

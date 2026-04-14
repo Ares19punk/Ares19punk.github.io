@@ -1,0 +1,74 @@
+EPIC
+
+Feature
+
+PBI'S: 1-Creación de portafolio personal con página de mascotas
+    *Como usuario quiero el diseño de una pagina web orientado a un portafolio, que contenga un repositorio con mis proyectos, un "about me" y 
+     y que incluya una pagina animalista. La pagina debe garantizar una experiencia de usuario haciendo uso de maquetacioin visual para asegurar
+     una interacción y mostrar una imagen profesional al publico
+
+     Dado que el usuario necesita un portafolio web que presente de manera organizada sus proyectos
+     Cuando el usuario ingrese a la pagina y explore las secciones de "About me", "proyectos" y Contactos
+     Entonces el sistema debe mostrar una arquitectura y una interfaz que facilite la navegacion con HTML
+
+     Dado que el usuario necesita de una sección dedicadas a los animales
+     Cuando el usuario acceda al portafolio web y accione un boton de enlace hacia la pagina de mascotas
+     Entonces el sistema debe desplegar una galeria visual de animales con HTML
+
+     Dado que el usuario requiere llamar la atención de los usuarios
+     Cuando los usuarios esten navegando a traves de diferentes secciones
+     Entonces la pagina debe garantizar una interfaz con colores llamativos y componentes optimos, asegurando la experiencia de usuario
+
+    Task:
+        1-Configuracion inicial
+        *Crea una carpeta llamada portafolio.
+        *Dentro de la carpeta, crea dos archivos HTML:
+
+            index.html (será el portafolio)
+            mascotas.html (será la página secundaria de mascotas)
+
+        *Agrega un archivo styles.css en la misma carpeta para los estilos.
+
+        2. Estructura del portafolio (index.html):
+
+        *Define la estructura básica con <!DOCTYPE html>, <html>, <head>, <body>.
+        *En el <head>, agrega metadatos, título y vincula styles.css.
+        *Dentro del <body>:
+            Crea un encabezado (<header>) con tu nombre y un menú de navegación (<nav>).
+            Agrega secciones (<section>) para:
+                Sobre mí: breve descripción en un <p>.
+                Proyectos: una lista (<ul>) con enlaces simulados.
+                Contacto: un formulario básico con <form>, <input> y <button>.
+            *Incluye un enlace en el menú que lleve a mascotas.html
+
+        3. Estructura de la página de mascotas (mascotas.html):
+
+        Define la misma estructura básica de HTML5.
+        En el <header>, coloca un título como “Mis Mascotas”.
+        Crea una galería sencilla con <section> que muestre al menos tres imágenes de mascotas usando <img>.
+        Agrega una breve descripción de cada mascota dentro de <article>.
+        Incluye un enlace (<a>) que permita volver al portafolio (index.html).
+
+        4. Apliacion de estilos
+
+        Aplica una tipografía legible y colores de fondo/texto que diferencien las secciones.
+        Usa display, margin y padding para organizar los elementos con el modelo de caja.
+        Agrega un hover a los enlaces para que cambien de color al pasar el mouse.
+        Opcional: incluye una sombra en las imágenes y un borde redondeado.
+        El límite es tu imaginación, si deseas agregar una nueva sección, un nuevo estilo, no hay ningún problema.
+
+PBI'S: 2-Mejora del layout utilizando CSS Flexbox y Grid
+    *Como usuario quiero mejorar el diseño visual del portafolio mediante la implementación de tecnicas de maquetación
+     moderna para lograr una distribución más organizada, clara y profesional. Esto me permitira mejorar la experiencia
+     de navegacion del usuario
+     
+    Dado que el usuario necesita la mejora visual en la sección de mascotas
+    Cuando el usuario ingrese a la pagina y explore las seeciones de la pagina
+    Entonces el sistema debe mostrar una arquitectura que basado en los conceptos de CCS Flexbox y CCS Grid Layaout
+    
+    Dado que el usuario necesita un mejor diseño 
+
+
+
+
+   

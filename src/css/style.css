@@ -85,6 +85,7 @@ nav {
 }
 
   nav ul{
+    flex-wrap: wrap;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -183,7 +184,7 @@ li {
 }
 
 
-/*Estilos aplicados para formularios*/
+/*Estilos aplicados para el apartado de formularios*/
 form div {
   margin-top: 20px;
   display: flex;
@@ -236,6 +237,7 @@ figcaption {
 section figure {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   border: 1px solid var(--color-neon-cyan);
   justify-content: center;
@@ -253,8 +255,14 @@ section figure {
 figure div {
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
   border: 0.1px solid var(--color-neon-cyan);
   align-items: center;
+}
+
+div img {
+
+  border-radius: 30px;
 }
 
 

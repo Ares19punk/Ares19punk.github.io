@@ -16,7 +16,7 @@
     --color-neon-purple: #9d4edd;
     --color-neon-green: #39ff14;
     --color-neon-yellow: #ffe600;
-    --color-neon-orange: #e4603f;
+    --color-neon-orange: #fa7705;
     --color-neon-darkblue: #107594;
     --color-neon-green-rgba: #151715f7;
 
@@ -184,7 +184,7 @@ li {
 
 
 /*Estilos aplicados para formularios*/
-form {
+form div {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -195,35 +195,30 @@ form {
 label {
   font-family: var(--font-terminal);
   color: var(--color-texto-secundario);
-  -webkit-text-stroke: 1px var(--color-texto-apagado);
+  font-size: 18px;
 }
 
-input {
-  font-family: var(--font-terminal);
-  font-size: 15px;
-  width: 200px;
-  border: none;
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--color-fondo) 0px,
-    var(--color-fondo) 4px,
-    var(--color-neon-green-rgba) 4px,
-    var(--color-neon-green-rgba) 6px
-  );   
-}
-
-textarea {
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 14px; 
+  border: 1px solid var(--color-neon-cyan);
   background-color: var(--color-fondo-secundario);
+  color: var(--color-texto-apagado);
   font-family: var(--font-terminal);
-  font-size: 15px;
-  width: 200px;
+  font-size: 16px;
+  box-shadow: 0 0 10px var(--color-neon-cyan);
 }
 
 button {
+  width: fit-content;
+  padding: 12px 24px;
   background-color: var(--color-panel);
   color: var(--color-neon-cyan);
   border: 1px solid var(--color-neon-cyan);
   box-shadow: 0 0 10px var(--color-neon-cyan);
+  font-family: var(--font-title);
+  cursor: pointer;
 }
 
 button:hover {

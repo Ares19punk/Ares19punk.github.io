@@ -38,6 +38,7 @@
 
 /* Se definio borde, espacio interno y espacio externo para header, nav, sction, footer, body */
 header {
+    border-radius: 12px;
     background: repeating-linear-gradient(
     to bottom,
     var(--color-fondo) 0px,
@@ -51,6 +52,7 @@ header {
     margin: 20px;
 }
 
+
 header h1 {
   margin: 3px;
   font-size: 25px;
@@ -59,6 +61,11 @@ header h1 {
   color: var(--color-texto-apagado);
   
   animation: animate 5s linear infinite;
+}
+
+header h2 {
+    color: var(--color-texto-secundario);
+    text-shadow: 0 0 4px var(--color-neon-cyan);
 }
 
 @keyframes animate{
@@ -82,6 +89,7 @@ nav {
   padding: 16px;
   border: 1px solid var(--color-borde);
   background-color: var(--color-fondo-secundario);
+  border-radius: 12px;
 }
 
   nav ul{
@@ -105,7 +113,9 @@ nav {
 
   nav a:hover {
     color: var(--color-hover);
-    text-shadow: 0 0 10px var(--color-neon-orange);
+    text-shadow: 0 0 10px var(--color-neon-green);
+   transition: background-color 0.3s ease, color 0.3s ease;
+
   }
 
 main {
@@ -132,6 +142,7 @@ section{
   padding: 20px;
   border: 1px solid var(--color-borde);
   background-color: var(--color-panel);
+  border-radius: 12px;
 
 }
 
@@ -143,14 +154,12 @@ footer{
 }
 
 body {
-  background: repeating-linear-gradient(
+  background: linear-gradient(
     to bottom,
-    var(--color-fondo) 0px,
-    var(--color-fondo) 4px,
-    var(--color-neon-green-rgba) 4px,
-    var(--color-neon-green-rgba) 6px
+    var(--color-fondo),
+    var(--color-fondo-secundario)
   );
-  
+  color: var(--color-texto-principal);
 }
 
 /*Definir texto base para h1, h2 y h3 */
@@ -161,6 +170,7 @@ h1, h2, h3 {
 /*Definir texto base para p, li */
 p, li {
   font-family: var(--font-terminal);
+  list-style:none;
 }
 
 
@@ -180,13 +190,20 @@ p {
 }
 
 li {
-    color: var(--color-texto-apagado);
+    color: var(--color-neon-darkblue);
+    font-family: var(--font-system);
 }
 
 
 /*Estilos aplicados para el apartado de formularios*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 form div {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -205,10 +222,17 @@ input, textarea {
   padding: 12px 14px; 
   border: 1px solid var(--color-neon-cyan);
   background-color: var(--color-fondo-secundario);
-  color: var(--color-texto-apagado);
+  color: var(--color-texto-principal);
   font-family: var(--font-terminal);
   font-size: 16px;
   box-shadow: 0 0 10px var(--color-neon-cyan);
+  border-radius: 12px;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+  
 }
 
 button {
@@ -220,14 +244,27 @@ button {
   box-shadow: 0 0 10px var(--color-neon-cyan);
   font-family: var(--font-title);
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 12px;
 }
 
 button:hover {
   background-color: var(--color-hover);
   color: var(--color-fondo);
+  transform: translateY(-2px);
+
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-neon-pink);
+  box-shadow: 0 0 12px var(--color-neon-pink);
 }
 
 /*Estilo aplicado para la sección mascota*/
+
+
 
 figcaption {
   font-family: var(--font-terminal);
@@ -235,6 +272,7 @@ figcaption {
 }
 
 section figure {
+  border-radius: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -265,5 +303,29 @@ div img {
   border-radius: 30px;
 }
 
+.resaltar-imagen {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resaltar-imagen:hover {
+  box-shadow: 0 0 30px var(--color-neon-pink);
+  transform: translateY(-3px);
+  background-image: lobo-furioso;
+}
 
 
+/* Pie de pagina */
+
+footer {
+  border-radius: 12px;
+}
+
+.panel-cyber {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--color-panel) 0px,
+    var(--color-panel) 6px,
+    rgba(0, 245, 255, 0.08) 6px,
+    rgba(0, 245, 255, 0.08) 8px
+  );
+}

@@ -1,21 +1,14 @@
 
-
 My user story()
 
-# Search for Restaurants by Customer
+"As a user, I want to see the currency options clearly on mobile devices, so that I can select the correct currency without confusion."
 
-"As a user, I want to search for restaurants so that I can find places to eat or specific type of food"
+## Proposito historia de usuario:
+This user story focuses on improving the user experience on mobile devices."
 
-Scenario 1: Search by name (Búsqueda por nombre)
-    GIVEN: The user wants to search the restaurant in the application.
-    WHEN: The user enters a specific restaurant name and clicks the “Search" Botton.
-    THEN: The system show a list of restaurants that match the entered name.
+## Quien es el usuario
+"The user in this case is a mobile user who is interacting with the currency selector."
 
-# Task
-1. Create a search form
-2. Implement input fields with asociate labels
-
-Priority: Medium
-Status: Done
-Story point: 3
+## Que necesita
+"The user wants to see the currency options clearly, including both icons and text."
 

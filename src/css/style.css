@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*====================VARIABLES====================*/
 :root {
   
     --color-fondo: #0a0a0f;
@@ -31,13 +32,72 @@
     --font-system: "Share Tech Mono", "Courier New", monospace;
     --font-terminal: "VT323", "Share Tech Mono", "Courier New", monospace;
     --font-tech: "Audiowide", "Orbitron", sans-serif;
-    
+}
+/*=================================================*/
+
+/*==================BASE GENERAL==================*/
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--color-fondo),
+    var(--color-fondo-secundario)
+  );
+  color: var(--color-texto-principal);
 }
 
+main {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/*=================================================*/
 
-/* Se definio borde, espacio interno y espacio externo para header, nav, sction, footer, body */
+/*====================TIPOGRAFIA===================*/
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+h2 {
+  text-align: center;
+}
+
+p, li {
+  line-height: 1.6;
+  font-size: 1.04rem;
+  font-family: var(--font-terminal);
+  list-style:none;
+}
+
+h2{
+  color: var(--color-texto-secundario);
+  -webkit-text-stroke: 1px var(--color-neon-orange);
+  text-shadow: 0 0 8px var(--color-neon-orange);
+}
+
+h3{
+    color: var(--color-texto-secundario);
+    text-shadow: 0 0 8px var(--color-neon-orange);
+}
+
+p {
+    color: var(--color-neon-darkblue);
+}
+
+li {
+    color: var(--color-neon-darkblue);
+    font-family: var(--font-system);
+}
+
+/*=================================================*/
+
+/*================LAYOUT PRINCIPAL=================*/
+
 header {
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     background: repeating-linear-gradient(
     to bottom,
@@ -45,18 +105,64 @@ header {
     var(--color-fondo) 4px,
     var(--color-fondo-secundario) 4px,
     var(--color-fondo-secundario) 6px
-  );;
+  );
     border: 1px solid var(--color-neon-darkblue);
     box-shadow: 0 0 10px var(--color-neon-cyan);
     padding: 24px;
     margin: 20px;
+    gap: 10px;
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: repeating-linear-gradient(
+    to bottom,
+    var(--color-fondo) 0px,
+    var(--color-fondo) 4px,
+    var(--color-fondo-secundario) 4px,
+    var(--color-fondo-secundario) 6px
+  );
+    border: 1px solid var(--color-neon-darkblue);
+    box-shadow: 0 0 10px var(--color-neon-cyan);
+    padding: 24px;
+    margin: 20px;
+    gap: 10px;
+    text-align: center;
 }
 
+nav {
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-fondo-secundario);
+  border-radius: 12px;
+}
+
+section{
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-panel);
+  border-radius: 12px;
+
+}
+
+footer{
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+}
+
+/*=================================================*/
+
+/*=====================HEADER======================*/
 
 header h1 {
-  margin: 3px;
-  font-size: 25px;
-  letter-spacing: 5px;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-texto-apagado);
   
@@ -64,6 +170,8 @@ header h1 {
 }
 
 header h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     color: var(--color-texto-secundario);
     text-shadow: 0 0 4px var(--color-neon-cyan);
 }
@@ -84,13 +192,9 @@ header h2 {
   }
 }
 
-nav {
-  margin: 20px;
-  padding: 16px;
-  border: 1px solid var(--color-borde);
-  background-color: var(--color-fondo-secundario);
-  border-radius: 12px;
-}
+/*=================================================*/
+
+/*=====================NAVEGACION==================*/
 
   nav ul{
     flex-wrap: wrap;
@@ -118,84 +222,9 @@ nav {
 
   }
 
-main {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Modificacion de imagen de Eduardo programando en un entorno Cyber punk*/
-#eduardo-cyberpunk {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid var(--color-neon-cyan);
-  box-shadow: 0 0 20px var(--color-neon-pink);
-  border-radius: 20px;
-
-}
-
-section{
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--color-borde);
-  background-color: var(--color-panel);
-  border-radius: 12px;
-
-}
-
-footer{
-  margin: 20px;
-  padding: 16px;
-  border: 1px solid var(--color-borde);
-
-}
-
-body {
-  background: linear-gradient(
-    to bottom,
-    var(--color-fondo),
-    var(--color-fondo-secundario)
-  );
-  color: var(--color-texto-principal);
-}
-
-/*Definir texto base para h1, h2 y h3 */
-h1, h2, h3 {
-  font-family: var(--font-title);
-}
-
-/*Definir texto base para p, li */
-p, li {
-  font-family: var(--font-terminal);
-  list-style:none;
-}
-
-
-h2{
-  color: var(--color-texto-secundario);
-  -webkit-text-stroke: 1px var(--color-neon-orange);
-  text-shadow: 0 0 8px var(--color-neon-orange);
-}
-
-h3{
-    color: var(--color-texto-secundario);
-    text-shadow: 0 0 8px var(--color-neon-orange);
-}
-
-p {
-    color: var(--color-neon-darkblue);
-}
-
-li {
-    color: var(--color-neon-darkblue);
-    font-family: var(--font-system);
-}
-
-
-/*Estilos aplicados para el apartado de formularios*/
+ /*=================================================*/
+ 
+ /*====================FORMULARIOS==================*/
 
 form {
   display: flex;
@@ -232,7 +261,6 @@ input, textarea {
 textarea {
   min-height: 140px;
   resize: vertical;
-  
 }
 
 button {
@@ -252,7 +280,6 @@ button:hover {
   background-color: var(--color-hover);
   color: var(--color-fondo);
   transform: translateY(-2px);
-
 }
 
 input:focus,
@@ -262,9 +289,49 @@ textarea:focus {
   box-shadow: 0 0 12px var(--color-neon-pink);
 }
 
+/*=================================================*/
+
+/*===============CLASES ESPECIALES=================*/
+
+.resaltar-imagen {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resaltar-imagen:hover {
+  box-shadow: 0 0 30px var(--color-neon-pink);
+  transform: translateY(-3px);
+  background-image: lobo-furioso;
+}
+
+.panel-cyber {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--color-panel) 0px,
+    var(--color-panel) 6px,
+    rgba(0, 245, 255, 0.08) 6px,
+    rgba(0, 245, 255, 0.08) 8px
+  );
+}
+
+/*==================ID ESPECIALES==================*/
+
+/* Modificacion de imagen de Eduardo programando en un entorno Cyber punk*/
+#eduardo-cyberpunk {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-neon-cyan);
+  box-shadow: 0 0 20px var(--color-neon-pink);
+  border-radius: 20px;
+}
+
+/*=================================================*/
+
+/*=============SECCIÓN MASCOTAS.HTML===============*/
+
 /*Estilo aplicado para la sección mascota*/
-
-
 
 figcaption {
   font-family: var(--font-terminal);
@@ -287,7 +354,6 @@ section figure {
     var(--color-fondo) 4px,
     var(--color-neon-green-rgba) 4px,
     var(--color-neon-green-rgba) 6px)
-    
 }
 
 figure div {
@@ -299,33 +365,10 @@ figure div {
 }
 
 div img {
-
   border-radius: 30px;
 }
 
-.resaltar-imagen {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.resaltar-imagen:hover {
-  box-shadow: 0 0 30px var(--color-neon-pink);
-  transform: translateY(-3px);
-  background-image: lobo-furioso;
-}
+/*=================================================*/
 
 
-/* Pie de pagina */
 
-footer {
-  border-radius: 12px;
-}
-
-.panel-cyber {
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--color-panel) 0px,
-    var(--color-panel) 6px,
-    rgba(0, 245, 255, 0.08) 6px,
-    rgba(0, 245, 255, 0.08) 8px
-  );
-}

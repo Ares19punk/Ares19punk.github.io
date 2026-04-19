@@ -138,6 +138,7 @@ nav {
   border: 1px solid var(--color-borde);
   background-color: var(--color-fondo-secundario);
   border-radius: 12px;
+  box-shadow: 0 0 8px var(--color-neon-cyan);
 }
 
 section{
@@ -146,6 +147,7 @@ section{
   border: 1px solid var(--color-borde);
   background-color: var(--color-panel);
   border-radius: 12px;
+  box-shadow: 0 0 8px var(--color-neon-cyan);
 
 }
 
@@ -222,6 +224,24 @@ header h2 {
 
   }
 
+  section ul li:first-child {
+  color: var(--color-neon-cyan);
+}
+
+  section ul li:nth-child(2) {
+  color: var(--color-neon-orange);
+}
+
+  section ul li:nth-child(3) {
+  color: var(--color-neon-yellow);
+}
+
+  section ul li:nth-child(4) {
+  color: var(--color-neon-pink);
+}
+
+
+
  /*=================================================*/
  
  /*====================FORMULARIOS==================*/
@@ -261,6 +281,7 @@ input, textarea {
 textarea {
   min-height: 140px;
   resize: vertical;
+  resize: horizontal;
 }
 
 button {
@@ -272,21 +293,27 @@ button {
   box-shadow: 0 0 10px var(--color-neon-cyan);
   font-family: var(--font-title);
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: var(--color-hover);
   color: var(--color-fondo);
   transform: translateY(-2px);
+  box-shadow: 0 0 16px var(--color-neon-pink);
 }
 
 input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color-neon-pink);
-  box-shadow: 0 0 12px var(--color-neon-pink);
+  box-shadow: 0 0 12px var(--color-neon-pink)
+}
+
+input:focus {
+  outline: 2px solid var(--color-neon-pink);
 }
 
 /*=================================================*/
@@ -294,13 +321,19 @@ textarea:focus {
 /*===============CLASES ESPECIALES=================*/
 
 .resaltar-imagen {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  box-shadow: 0 0 12px var(--color-neon-cyan);
+  filter: brightness(0.9) contrast(1.05);
+  
+
 }
 
 .resaltar-imagen:hover {
   box-shadow: 0 0 30px var(--color-neon-pink);
   transform: translateY(-3px);
-  background-image: lobo-furioso;
+  opacity: 1;
+  filter: brightness(1.05) contrast(1.15) saturate(1.1);
 }
 
 .panel-cyber {

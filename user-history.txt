@@ -2,24 +2,31 @@ EPIC
 
 Feature
 
-PBI'S: 1-Creación de portafolio personal con página de mascotas
-    *Como usuario quiero el diseño de una pagina web orientado a un portafolio, que contenga un repositorio con mis proyectos, un "about me" y 
-     y que incluya una pagina animalista. La pagina debe garantizar una experiencia de usuario haciendo uso de maquetacioin visual para asegurar
-     una interacción y mostrar una imagen profesional al publico
+PBI'S: 1-The creation of a personal portafolio with pets page.
 
-     Dado que el usuario necesita un portafolio web que presente de manera organizada sus proyectos
-     Cuando el usuario ingrese a la pagina y explore las secciones de "About me", "proyectos" y Contactos
-     Entonces el sistema debe mostrar una arquitectura y una interfaz que facilite la navegacion con HTML
+    *As a user, I want a web page desing focused on a portafolio,contaning a repository with my projects, an "About me" section and 
+    including a pets page. The page must guatantee a good user experience by using a clear visual layout so that it ensures a interaction
+    and displays a professional image to the public.
 
-     Dado que el usuario necesita de una sección dedicadas a los animales
-     Cuando el usuario acceda al portafolio web y accione un boton de enlace hacia la pagina de mascotas
-     Entonces el sistema debe desplegar una galeria visual de animales con HTML
+    Give the user needs a web portfolio that present her projects in an organized way, when the user enters
+    the web page and explore the "about me", "projects" and "contact" sections, then the system must display
+    an architecture and an interface that make navigation easy.
 
-     Dado que el usuario requiere llamar la atención de los usuarios
-     Cuando los usuarios esten navegando a traves de diferentes secciones
-     Entonces la pagina debe garantizar una interfaz con colores llamativos y componentes optimos, asegurando la experiencia de usuario
+    Give the user needs a section focused the pets, when the user enters the web portfolio and presses the
+    button to go to the pets page, then the system must displays a visual gallery of pet by using HTML.
+
+    Given the user needs to attract users' attention, when users navigate through different sections, then 
+    the page should provide an attractive interface with eye-catching colors and appropriate components to 
+    ensure a good user experience.
 
     Task:
+        1-Initial configuration
+        *create a folder named portfolio
+        *Inside the folder, create two HTML file:
+            index.html (this will be my portfolio)
+            pets.html (thus will a secondary )
+        Add a styles.css file in the carpet to the styles
+
         1-Configuracion inicial
         *Crea una carpeta llamada portafolio.
         *Dentro de la carpeta, crea dos archivos HTML:

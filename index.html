@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Eduardo Pérez</title>
-    <link rel="shortcut icon" href="./img/images.png">   
+    <link rel="shortcut icon" href="./img/images.png">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
@@ -31,31 +34,71 @@
     <main>
         <section id="presentacion">
             <p>Hola, soy Eduardo, apasionado por la tecnologia cyberpunk con conocimientos en programación
-            avanzada. Mis lenguajes favoritos en programacion son <span>Python</span>, Java y todo lo que tiene que ver
-            con automatización y tecnologias de ciencia ficción.</p>
+                avanzada. Mis lenguajes favoritos en programacion son <span>Python</span>, Java y todo lo que tiene que
+                ver
+                con automatización y tecnologias de ciencia ficción.</p>
         </section>
         <section>
             <h2>Mi estilo visual</h2>
-            <img src="./public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk" width="768" id="eduardo-cyberpunk" >
+            <img src="./public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk" width="768"
+                id="eduardo-cyberpunk">
+        </section>
+        <section id="intereses">
+            <h2>Mis intereses</h2>
+            <img class="insignia-intereses" src="./public/img/insignia.png" alt="insignia cyberpunk" width=50%>
+            <p class="texto-intereses">Estas son las tareas que más despiertan mi curiosidad, motivación y volver real lo que imagino</p>
+            <div class="intereses-grid">
+                <article class="tarjeta-cyber interes-card">
+                    <span id="boton-interes1" class="boton-cyber">INTERES 01</span>
+                    <h3>Programación y desarrollo</h3>
+                    <p>Me apasiona construir soluciones usando Python, Java y JavaScript, con enfoque en lógica,
+                        automatización y desarrollo web.</p>
+                </article>
+
+                <article class="tarjeta-cyber interes-card">
+                    <span id="boton-interes2" class="boton-cyber">INTERES 02</span>
+                    <h3>Inteligencia artificial y sistemas</h3>
+                    <p>Me interesa la automatización de procesos, la inteligencia artificial aplicada y el desarrollo de
+                        sistemas tecnológicos útiles.</p>
+                </article>
+
+                <article class="tarjeta-cyber interes-card">
+                    <span id="boton-interes3" class="boton-cyber">INTERES 03</span>
+                    <h3>Estética cyberpunk y ciencia ficción</h3>
+                    <p>Me atraen las interfaces futuristas, los mundos de ciencia ficción, la tecnología visual y el
+                        diseño con identidad cyberpunk.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--Contenido de Proyectos-->
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+
+            <div class="proyectos-grid">
+                <article class="tarjeta-cyber">
+                    <span id="boton1" class="boton-cyber">INVENTARIO</span>
+                    <img src="public/img/Inventario-cyber.png" alt="Vista previda de proyecto Inventario-cyber">
+                    <h3>Sistema de Inventarios tecnologicos</h3>
+                    <p>Inventario tecnologico para seguimiento de ventas</p>
+                </article>
+                <article class="tarjeta-cyber">
+                    <span id="boton2" class="boton-cyber">AUTOMATIZACIÓN</span>
+                    <img src="public/img/sistema-automatización.png" alt="Vista previa de automatización con IA">
+                    <h3>Sistema de Automatización con IA</h3>
+                    <p>Automatizacion de procesos de gestión en la industria</p>
+                </article>
+                <article class="tarjeta-cyber">
+                    <span id="boton3" class="boton-cyber">IA</span>
+                    <img src="public/img/sistema-gestion-empresarial.png"
+                        alt="Vista previda de proyecto de sistema gestión integral empresarial">
+                    <h3>Sistema de gestión integral empresarial</h3>
+                    <p>Gestión integral de procesos empresariales asistidos con IA</p>
+                </article>
+            </div>
         </section>
         <section>
-            <h2 id="intereses">Mis intereses</h2>
-            <h3>Mis lenguajes favoritos</h3>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-            </ul>
-            <h3>Areas que me atraen</h3>
-            <ul>
-                <li>Análisis con Python</li>
-                <li>Automatización</li>
-                <li>Inteligencia Artificial</li>
-                <li>Tecnología Cyberpunk</li>
-            </ul>
-        </section>
-        <section>
-            <h2 id="aprendizaje">Mi ruta de aprendizaje</h2>
+            <h2 id="aprendizaje">Mis proyectos</h2>
             <ol>
                 <li>Dominar logica con Python</li>
                 <li>Dominar HTML</li>
@@ -65,7 +108,7 @@
                 <li>Crear proyectos reales</li>
             </ol>
         </section>
-         <section>
+        <section>
             <h2 id="enlace">Mis enlaces</h2>
             <a class="enlace-navegacion" href="mascotas.html">Ver mi página de mascotas</a>
             <div>
@@ -77,8 +120,8 @@
             <h2>Escribeme</h2>
             <form>
                 <div>
-                    <label for="nombre" >Nombre:</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre..." name="nombre" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre..." name="nombre" required>
                 </div>
                 <div>
                     <label for="numero">Número:</label>
@@ -89,13 +132,13 @@
                     <input type="email" id="correo" placeholder="Escribe tu correo..." name="correo" required>
                 </div>
                 <div>
-                    <label for="mensaje" >Mensaje:</label>
+                    <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" placeholder="Escribe tu mensaje..." name="mensaje" required></textarea>
                 </div>
                 <div>
                     <button type="submit">Enviar</button>
                 </div>
-                
+
             </form>
         </section>
     </main>
@@ -104,4 +147,5 @@
     </footer>
 
 </body>
+
 </html>

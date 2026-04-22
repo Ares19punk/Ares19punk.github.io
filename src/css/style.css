@@ -8,22 +8,25 @@
 :root {
 
   --color-fondo: #0a0a0f;
-  --color-fondo-secundario: #11111b;
+  --color-fondo-secundario: #051627;
   --color-fondo-terciario: #0e2022;
-  --color-panel: #1a1a2e;
+  --color-panel: #020f1a;
   --color-borde: #2a2a40;
+  
 
   --color-neon-cyan: #00f5ff;
-  --color-neon-pink: #ff00c8;
+  --color-neon-pink: #e67db9;
+  ;
   --color-neon-purple: #9d4edd;
   --color-neon-green: #39ff14;
   --color-neon-yellow: #ffe600;
   --color-neon-orange: #fa7705;
   --color-neon-darkblue: #107594;
   --color-neon-green-rgba: #151715f7;
+  --color-neon-online: #16d574;
 
   --color-texto-principal: #d86b4d;
-  --color-texto-secundario: #e2e2ea;
+  --color-texto-secundario: #cdd3db;
   --color-texto-apagado: #7a7a93;
 
   --color-hover: #00c2ff;
@@ -38,6 +41,10 @@
 /*=================================================*/
 
 /*==================BASE GENERAL==================*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: repeating-linear-gradient(to bottom,
@@ -72,9 +79,10 @@ h2 {
 p,
 li {
   line-height: 1.6;
-  font-size: 1.04rem;
+  font-size: 1.08rem;
   font-family: var(--font-terminal);
   list-style: none;
+  text-align: justify;
 }
 
 h2 {
@@ -87,13 +95,7 @@ h3 {
   text-shadow: 0 0 8px var(--color-texto-secundario);
 }
 
-p {
-  color: var(--color-texto-secundario);
-  font-family: var(--font-terminal);
-  font-style: italic;
-  font-size: 1.5em;
-  text-align: justify;
-}
+
 
 li {
   color: var(--color-neon-darkblue);
@@ -141,6 +143,10 @@ footer {
 
 /*=====================HEADER======================*/
 
+header span {
+  color: var(--color-neon-online);
+}
+
 header h1 {
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -186,7 +192,6 @@ header h2 {
       0 0 40px var(--color-neon-cyan),
       0 0 80px var(--color-neon-cyan),
       0 0 160px var(--color-neon-cyan);
-
   }
 }
 
@@ -362,7 +367,7 @@ input:focus {
 .tarjeta-cyber h3 {
   text-align: left;
   color: var(--color-texto-secundario);
-  text-shadow: 0 0 6px var(--color-neon-orange);
+  text-shadow: 0 0 6px var(--color-texto-secundaro);
 }
 
 .tarjeta-cyber p {
@@ -398,7 +403,7 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid var(--color-neon-cyan);
-  
+
 }
 
 .intereses-grid {
@@ -417,6 +422,14 @@ input:focus {
   gap: 32px;
 }
 
+#presentacion p {
+  color: var(--color-texto-secundario);
+  font-family: var(--font-terminal);
+  font-style: italic;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
 /* Modificacion de imagen de Eduardo programando en un entorno Cyber punk*/
 #eduardo-cyberpunk {
   display: block;
@@ -427,15 +440,13 @@ input:focus {
   border: 1px solid var(--color-fondo-secundario);
   border-radius: 100%;
   box-shadow: 0 0 10px var(--color-neon-cyan);
-  
 }
 
 #div1 {
   flex: 1;
 }
-
 #div2 {
-  font-family: var(--font-);
+  font-family: var(--font-terminal);
   flex: 2;
 }
 
@@ -487,6 +498,31 @@ input:focus {
   border: 1px solid var(--color-neon-orange);
 }
 
+/*SECCIÓN LENGUAJE*/
+
+#div-aprendizaje {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 30px ;
+  flex-wrap: wrap;
+}
+
+#div-aprendizaje figure {
+  max-width: 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#div-aprendizaje figure img {
+  width: 100%;
+  height: auto;
+
+}
+
 /*=================================================*/
 
 /*=============SECCIÓN MASCOTAS.HTML===============*/
@@ -498,7 +534,7 @@ figcaption {
   color: var(--color-neon-cyan);
 }
 
-section figure {
+.mascota figure {
   border-radius: 30px;
   display: flex;
   flex-direction: row;
@@ -515,7 +551,7 @@ section figure {
       var(--color-neon-green-rgba) 6px)
 }
 
-figure div {
+.mascota figure div {
   display: flex;
   flex-direction: column;
   border-radius: 30px;

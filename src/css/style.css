@@ -1,94 +1,103 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*====================VARIABLES====================*/
 :root {
-  
-    --color-fondo: #0a0a0f;
-    --color-fondo-secundario: #11111b;
-    --color-panel: #1a1a2e;
-    --color-borde: #2a2a40;
 
-    --color-neon-cyan: #00f5ff;
-    --color-neon-pink: #ff00c8;
-    --color-neon-purple: #9d4edd;
-    --color-neon-green: #39ff14;
-    --color-neon-yellow: #ffe600;
-    --color-neon-orange: #fa7705;
-    --color-neon-darkblue: #107594;
-    --color-neon-green-rgba: #151715f7;
+  --color-fondo: #0a0a0f;
+  --color-fondo-secundario: #11111b;
+  --color-fondo-terciario: #0e2022;
+  --color-panel: #1a1a2e;
+  --color-borde: #2a2a40;
 
-    --color-texto-principal: #d86b4d;
-    --color-texto-secundario: #e2e2ea;
-    --color-texto-apagado: #7a7a93;
+  --color-neon-cyan: #00f5ff;
+  --color-neon-pink: #ff00c8;
+  --color-neon-purple: #9d4edd;
+  --color-neon-green: #39ff14;
+  --color-neon-yellow: #ffe600;
+  --color-neon-orange: #fa7705;
+  --color-neon-darkblue: #107594;
+  --color-neon-green-rgba: #151715f7;
 
-    --color-hover: #00c2ff;
-    --color-sombra-neon: 0 0 10px #00f5ff, 0 0 20px #ff00c8;
+  --color-texto-principal: #d86b4d;
+  --color-texto-secundario: #e2e2ea;
+  --color-texto-apagado: #7a7a93;
 
-    --font-title: "Orbitron", "Exo 2", "Rajdhani", sans-serif;
-    --font-system: "Share Tech Mono", "Courier New", monospace;
-    --font-terminal: "VT323", "Share Tech Mono", "Courier New", monospace;
-    --font-tech: "Audiowide", "Orbitron", sans-serif;
+  --color-hover: #00c2ff;
+  --color-sombra-neon: 0 0 10px #00f5ff, 0 0 20px #ff00c8;
+
+  --font-title: "Orbitron", "Exo 2", "Rajdhani", sans-serif;
+  --font-system: "Share Tech Mono", "Courier New", monospace;
+  --font-terminal: "VT323", "Share Tech Mono", "Courier New", monospace;
+  --font-tech: "Audiowide", "Orbitron", sans-serif;
 }
+
 /*=================================================*/
 
 /*==================BASE GENERAL==================*/
 
 body {
-  background: linear-gradient(
-    to bottom,
-    var(--color-fondo),
-    var(--color-fondo-secundario)
-  );
+  background: repeating-linear-gradient(to bottom,
+      var(--color-fondo) 0px,
+      var(--color-fondo) 4px,
+      var(--color-fondo-secundario) 4px,
+      var(--color-fondo-secundario) 6px);
   color: var(--color-texto-principal);
 }
 
 main {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*=================================================*/
 
 /*====================TIPOGRAFIA===================*/
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-title);
+  text-shadow: 0 0 4px var(--color-texto-secundario);
 }
 
 h2 {
   text-align: center;
 }
 
-p, li {
+p,
+li {
   line-height: 1.6;
   font-size: 1.04rem;
   font-family: var(--font-terminal);
-  list-style:none;
+  list-style: none;
 }
 
-h2{
+h2 {
   color: var(--color-texto-secundario);
-  -webkit-text-stroke: 1px var(--color-neon-orange);
-  text-shadow: 0 0 8px var(--color-neon-orange);
+  font-size: 30px;
 }
 
-h3{
-    color: var(--color-texto-secundario);
-    text-shadow: 0 0 8px var(--color-neon-orange);
+h3 {
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 8px var(--color-texto-secundario);
 }
 
 p {
-    color: var(--color-neon-darkblue);
+  color: var(--color-texto-secundario);
+  font-family: var(--font-terminal);
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: justify;
 }
 
 li {
-    color: var(--color-neon-darkblue);
-    font-family: var(--font-system);
+  color: var(--color-neon-darkblue);
+  font-family: var(--font-system);
 }
 
 /*=================================================*/
@@ -96,62 +105,32 @@ li {
 /*================LAYOUT PRINCIPAL=================*/
 
 header {
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    background: repeating-linear-gradient(
-    to bottom,
-    var(--color-fondo) 0px,
-    var(--color-fondo) 4px,
-    var(--color-fondo-secundario) 4px,
-    var(--color-fondo-secundario) 6px
-  );
-    border: 1px solid var(--color-neon-darkblue);
-    box-shadow: 0 0 10px var(--color-neon-cyan);
-    padding: 24px;
-    margin: 20px;
-    gap: 10px;
-    text-align: center;
-}
-header {
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    background: repeating-linear-gradient(
-    to bottom,
-    var(--color-fondo) 0px,
-    var(--color-fondo) 4px,
-    var(--color-fondo-secundario) 4px,
-    var(--color-fondo-secundario) 6px
-  );
-    border: 1px solid var(--color-neon-darkblue);
-    box-shadow: 0 0 10px var(--color-neon-cyan);
-    padding: 24px;
-    margin: 20px;
-    gap: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px;
+  gap: 10px;
 }
 
 nav {
   margin: 20px;
-  padding: 16px;
-  border: 1px solid var(--color-borde);
-  background-color: var(--color-fondo-secundario);
-  border-radius: 12px;
-  box-shadow: 0 0 8px var(--color-neon-cyan);
+  padding: 14px 20px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-section{
+section {
   margin: 20px;
   padding: 20px;
-  border: 1px solid var(--color-borde);
-  background-color: var(--color-panel);
+  border: 1px solid var(--color-fondo-secundario);
+  background-color: var(--color-fondo-secundario);
   border-radius: 12px;
-  box-shadow: 0 0 8px var(--color-neon-cyan);
 
 }
 
-footer{
+footer {
   margin: 20px;
   padding: 16px;
   border: 1px solid var(--color-borde);
@@ -167,30 +146,47 @@ header h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-texto-apagado);
-  
+
   animation: animate 5s linear infinite;
 }
 
 header h2 {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: var(--color-texto-secundario);
-    text-shadow: 0 0 4px var(--color-neon-cyan);
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 4px var(--color-texto-secundario);
+  text-align: start;
 }
 
-@keyframes animate{
-  0%,10%,15%,20%,50%,60%,70%,90%{
+@keyframes animate {
+
+  0%,
+  10%,
+  15%,
+  20%,
+  50%,
+  60%,
+  70%,
+  90% {
     color: var(--color-texto-apagado);
     text-shadow: none;
   }
-  0.1%,10.1%,15.1%,20.1%,50.1%,60.1%,70.1%,90.1%{
-    color:#e2e2ea;
+
+  0.1%,
+  10.1%,
+  15.1%,
+  20.1%,
+  50.1%,
+  60.1%,
+  70.1%,
+  90.1% {
+    color: #e2e2ea;
     text-shadow: 0 0 10px var(--color-neon-cyan),
-    0 0 20px var(--color-neon-cyan),
-    0 0 40px var(--color-neon-cyan),
-    0 0 80px var(--color-neon-cyan),
-    0 0 160px var(--color-neon-cyan);
-    
+      0 0 20px var(--color-neon-cyan),
+      0 0 40px var(--color-neon-cyan),
+      0 0 80px var(--color-neon-cyan),
+      0 0 160px var(--color-neon-cyan);
+
   }
 }
 
@@ -198,53 +194,37 @@ header h2 {
 
 /*=====================NAVEGACION==================*/
 
-  nav ul{
-    flex-wrap: wrap;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+  flex-wrap: wrap;
 
-  }
+}
 
-  nav li{
-    margin-bottom: 10px;
-  }
+nav li {
+  margin-bottom: 10px;
+}
 
-  nav a {
-    color: var(--color-neon-cyan);
-    text-decoration: none;
-    font-family: var(--font-system);
-  }
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-terminal);
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
 
-  nav a:hover {
-    color: var(--color-hover);
-    text-shadow: 0 0 10px var(--color-neon-green);
-   transition: background-color 0.3s ease, color 0.3s ease;
-
-  }
-
-  section ul li:first-child {
+nav a:hover {
   color: var(--color-neon-cyan);
+  text-shadow: 0 0 8px var(--color-neon-cyan);
 }
 
-  section ul li:nth-child(2) {
-  color: var(--color-neon-orange);
-}
+/*=================================================*/
 
-  section ul li:nth-child(3) {
-  color: var(--color-neon-yellow);
-}
-
-  section ul li:nth-child(4) {
-  color: var(--color-neon-pink);
-}
-
-
-
- /*=================================================*/
- 
- /*====================FORMULARIOS==================*/
+/*====================FORMULARIOS==================*/
 
 form {
   display: flex;
@@ -265,10 +245,11 @@ label {
   font-size: 18px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   max-width: 500px;
-  padding: 12px 14px; 
+  padding: 12px 14px;
   border: 1px solid var(--color-neon-cyan);
   background-color: var(--color-fondo-secundario);
   color: var(--color-texto-principal);
@@ -335,13 +316,11 @@ input:focus {
 }
 
 .panel-cyber {
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--color-panel) 0px,
-    var(--color-panel) 6px,
-    rgba(0, 245, 255, 0.08) 6px,
-    rgba(0, 245, 255, 0.08) 8px
-  );
+  background: repeating-linear-gradient(to bottom,
+      var(--color-panel) 0px,
+      var(--color-panel) 6px,
+      rgba(0, 245, 255, 0.08) 6px,
+      rgba(0, 245, 255, 0.08) 8px);
 }
 
 /*formato Grid PROYECTOS*/
@@ -350,46 +329,44 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  
+
 }
 
 .tarjeta-cyber {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    padding: 18px;
-    border: 1px solid var(--color-neon-cyan);
-    border-radius: 16px;
-    background: linear-gradient(
-        to bottom,
-        var(--color-panel),
-        var(--color-fondo-secundario)
-    );
-    box-shadow: 0 0 10px var(--color-neon-cyan);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--color-neon-cyan);
+  border-radius: 16px;
+  background: linear-gradient(to bottom,
+      var(--color-panel),
+      var(--color-fondo-secundario));
+  box-shadow: 0 0 10px var(--color-neon-cyan);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-cyber:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 18px var(--color-neon-pink);
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px var(--color-neon-pink);
 }
 
 .tarjeta-cyber img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 1px solid var(--color-neon-cyan);
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--color-neon-cyan);
 }
 
 .tarjeta-cyber h3 {
-    text-align: left;
-    color: var(--color-texto-secundario);
-    text-shadow: 0 0 6px var(--color-neon-orange);
+  text-align: left;
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 6px var(--color-neon-orange);
 }
 
 .tarjeta-cyber p {
-    color: var(--color-texto-principal);
+  color: var(--color-neon-pink);
 }
 
 .boton-cyber {
@@ -409,26 +386,36 @@ input:focus {
 .texto-intereses {
   max-width: 800px;
   margin: 0 auto 24px auto;
-  text-align: center;
-  color: var(--color-hover);
+  text-align: justify;
+  color: var(--color-neon-cyan);
 
 }
 
 .insignia-intereses {
-  display: flex;
-  width: 200px;
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid var(--color-neon-cyan);
-  border-radius: 100px;
+  
 }
 
-.intereses-grid{
+.intereses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 /*==================ID ESPECIALES==================*/
+
+/*PRESENTACIÓN*/
+#presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
 
 /* Modificacion de imagen de Eduardo programando en un entorno Cyber punk*/
 #eduardo-cyberpunk {
@@ -437,22 +424,36 @@ input:focus {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--color-neon-cyan);
-  box-shadow: 0 0 20px var(--color-neon-pink);
-  border-radius: 20px;
+  border: 1px solid var(--color-fondo-secundario);
+  border-radius: 100%;
+  box-shadow: 0 0 10px var(--color-neon-cyan);
+  
 }
+
+#div1 {
+  flex: 1;
+}
+
+#div2 {
+  font-family: var(--font-);
+  flex: 2;
+}
+
+
 /*SECCIÓN PROYECTOS*/
-#boton1{
+#boton1 {
   color: var(--color-neon-purple);
   box-shadow: 0 0 10px var(--color-neon-purple);
   border: 1px solid var(--color-neon-purple);
 }
-#boton2{
+
+#boton2 {
   color: var(--color-neon-pink);
   box-shadow: 0 0 10px var(--color-neon-pink);
   border: 1px solid var(--color-neon-pink);
 }
-#boton3{
+
+#boton3 {
   color: var(--color-neon-orange);
   box-shadow: 0 0 10px var(--color-neon-orange);
   border: 1px solid var(--color-neon-orange);
@@ -460,7 +461,7 @@ input:focus {
 
 /*SECCIÓN INTERESES*/
 
-#intereses{
+#intereses {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,17 +469,19 @@ input:focus {
   gap: 20px;
 }
 
-#boton-interes1{
+#boton-interes1 {
   color: var(--color-neon-purple);
   box-shadow: 0 0 10px var(--color-neon-purple);
   border: 1px solid var(--color-neon-purple);
 }
-#boton-interes2{
+
+#boton-interes2 {
   color: var(--color-neon-pink);
   box-shadow: 0 0 10px var(--color-neon-pink);
   border: 1px solid var(--color-neon-pink);
 }
-#boton-interes2{
+
+#boton-interes2 {
   color: var(--color-neon-orange);
   box-shadow: 0 0 10px var(--color-neon-orange);
   border: 1px solid var(--color-neon-orange);
@@ -505,12 +508,11 @@ section figure {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--color-fondo) 0px,
-    var(--color-fondo) 4px,
-    var(--color-neon-green-rgba) 4px,
-    var(--color-neon-green-rgba) 6px)
+  background: repeating-linear-gradient(to bottom,
+      var(--color-fondo) 0px,
+      var(--color-fondo) 4px,
+      var(--color-neon-green-rgba) 4px,
+      var(--color-neon-green-rgba) 6px)
 }
 
 figure div {
@@ -526,6 +528,3 @@ div img {
 }
 
 /*=================================================*/
-
-
-

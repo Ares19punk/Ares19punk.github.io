@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*====================INTERESES====================*/
+
+.texto-intereses {
+  max-width: 800px;
+  margin: 0 auto 24px auto;
+  text-align: justify;
+  color: var(--color-neon-cyan);
+
+}
+
+.insignia-intereses {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-neon-cyan);
+
+}
+
+.intereses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/*ENLACES*/
+
+.p-enlaces {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: var(--color-texto-apagado);
+}
+
+.enlaces-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.enlace-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.enlace-card h3 {
+  text-align: left;
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 6px var(--color-neon-cyan);
+}
+
+.enlace-card p {
+  color: var(--color-texto-apagado);
+  text-align: left;
+}
+
+/*=================================================*/
+
+/*=================ID ESPECIALES===================*/
+
+#intereses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 20px;
+}
+
+
+
+#boton-interes1 {
+  color: var(--color-neon-purple);
+  box-shadow: 0 0 10px var(--color-neon-purple);
+  border: 1px solid var(--color-neon-purple);
+}
+
+#boton-interes2 {
+  color: var(--color-neon-pink);
+  box-shadow: 0 0 10px var(--color-neon-pink);
+  border: 1px solid var(--color-neon-pink);
+}
+
+#boton-interes2 {
+  color: var(--color-neon-orange);
+  box-shadow: 0 0 10px var(--color-neon-orange);
+  border: 1px solid var(--color-neon-orange);
+}

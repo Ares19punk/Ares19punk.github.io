@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*==================BASE GENERAL==================*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: repeating-linear-gradient(to bottom,
+      var(--color-fondo) 0px,
+      var(--color-fondo) 4px,
+      var(--color-fondo-secundario) 4px,
+      var(--color-fondo-secundario) 6px);
+  color: var(--color-texto-principal);
+}
+
+main {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================================================*/
+
+/*====================TIPOGRAFIA===================*/
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  text-shadow: 0 0 4px var(--color-texto-secundario);
+}
+
+h2 {
+  text-align: center;
+}
+
+p,
+li {
+  line-height: 1.6;
+  font-size: 1.08rem;
+  font-family: var(--font-terminal);
+  list-style: none;
+  text-align: justify;
+}
+
+h2 {
+  color: var(--color-texto-secundario);
+  font-size: 30px;
+}
+
+h3 {
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 8px var(--color-texto-secundario);
+}
+
+
+
+li {
+  color: var(--color-neon-darkblue);
+  font-family: var(--font-system);
+}
+
+/*=================================================*/
+
+/*================LAYOUT PRINCIPAL=================*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px;
+  gap: 10px;
+}
+
+nav {
+  margin: 20px;
+  padding: 14px 20px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--color-fondo-secundario);
+  background-color: var(--color-fondo-secundario);
+  border-radius: 12px;
+}
+
+footer {
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+}
+
+/*=================================================*/
+
+/*===============CLASES ESPECIALES=================*/
+
+.fondo-punk {
+  background-image: url(/public/img/fondo-punk.png);
+  opacity: 0.8;
+}
+
+.fondo-punk2 {
+  background-image: url(/public/img/fondo-punk2.png);
+  opacity: 0.8;
+}
+
+.fondo-punk3 {
+  background-image: url(/public/img/fondo-punk3.png);
+  opacity: 0.8;
+}
+
+.fondo-punk4 {
+  background-image: url(/public/img/fondo-punk4.png);
+  opacity: 0.8;
+}
+
+.resaltar-imagen {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  box-shadow: 0 0 12px var(--color-neon-cyan);
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.resaltar-imagen:hover {
+  box-shadow: 0 0 30px var(--color-neon-pink);
+  transform: translateY(-3px);
+  opacity: 1;
+  filter: brightness(1.05) contrast(1.15) saturate(1.1);
+}
+
+.panel-cyber {
+  background: repeating-linear-gradient(to bottom,
+      var(--color-panel) 0px,
+      var(--color-panel) 6px,
+      rgba(0, 245, 255, 0.08) 6px,
+      rgba(0, 245, 255, 0.08) 8px);
+}
+
+/*=================================================*/
+
+/*====================LENGUAJES====================*/
+
+#div-aprendizaje {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 30px ;
+  flex-wrap: wrap;
+}
+
+#div-aprendizaje figure {
+  max-width: 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#div-aprendizaje figure img {
+  width: 100%;
+  height: auto;
+  
+}
+
+/*=================================================*/
+
+/*=============SECCIÓN MASCOTAS.HTML===============*/
+
+/*Estilo aplicado para la sección mascota*/
+
+figcaption {
+  font-family: var(--font-terminal);
+  color: var(--color-neon-cyan);
+}
+
+.mascota figure {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  border: 1px solid var(--color-neon-cyan);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: repeating-linear-gradient(to bottom,
+      var(--color-fondo) 0px,
+      var(--color-fondo) 4px,
+      var(--color-neon-green-rgba) 4px,
+      var(--color-neon-green-rgba) 6px)
+}
+
+.mascota figure div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  border: 0.1px solid var(--color-neon-cyan);
+  align-items: center;
+}
+
+.mascota figure div img{
+  border-radius: 30px;
+}
+
+/*=================================================*/
+

@@ -1,0 +1,81 @@
+EPIC
+
+Feature
+
+PBI'S: 1-The creation of a personal portafolio with pets page.
+
+    *As a user, I want a web page desing focused on a portafolio,contaning a repository with my projects, an "About me" section and 
+    including a pets page. The page must guatantee a good user experience by using a clear visual layout so that it ensures a interaction
+    and displays a professional image to the public.
+
+    Give the user needs a web portfolio that present her projects in an organized way, when the user enters
+    the web page and explore the "about me", "projects" and "contact" sections, then the system must display
+    an architecture and an interface that make navigation easy.
+
+    Give the user needs a section focused the pets, when the user enters the web portfolio and presses the
+    button to go to the pets page, then the system must displays a visual gallery of pet by using HTML.
+
+    Given the user needs to attract users' attention, when users navigate through different sections, then 
+    the page should provide an attractive interface with eye-catching colors and appropriate components to 
+    ensure a good user experience.
+
+    Task:
+        1-Initial configuration
+        *create a folder named portfolio
+        *Inside the folder, create two HTML file:
+            index.html (this will be my portfolio)
+            pets.html (thus will a secondary )
+        Add a styles.css file in the carpet to the styles
+
+        1-Configuracion inicial
+        *Crea una carpeta llamada portafolio.
+        *Dentro de la carpeta, crea dos archivos HTML:
+
+            index.html (será el portafolio)
+            mascotas.html (será la página secundaria de mascotas)
+
+        *Agrega un archivo styles.css en la misma carpeta para los estilos.
+
+        2. Estructura del portafolio (index.html):
+
+        *Define la estructura básica con <!DOCTYPE html>, <html>, <head>, <body>.
+        *En el <head>, agrega metadatos, título y vincula styles.css.
+        *Dentro del <body>:
+            Crea un encabezado (<header>) con tu nombre y un menú de navegación (<nav>).
+            Agrega secciones (<section>) para:
+                Sobre mí: breve descripción en un <p>.
+                Proyectos: una lista (<ul>) con enlaces simulados.
+                Contacto: un formulario básico con <form>, <input> y <button>.
+            *Incluye un enlace en el menú que lleve a mascotas.html
+
+        3. Estructura de la página de mascotas (mascotas.html):
+
+        Define la misma estructura básica de HTML5.
+        En el <header>, coloca un título como “Mis Mascotas”.
+        Crea una galería sencilla con <section> que muestre al menos tres imágenes de mascotas usando <img>.
+        Agrega una breve descripción de cada mascota dentro de <article>.
+        Incluye un enlace (<a>) que permita volver al portafolio (index.html).
+
+        4. Apliacion de estilos
+
+        Aplica una tipografía legible y colores de fondo/texto que diferencien las secciones.
+        Usa display, margin y padding para organizar los elementos con el modelo de caja.
+        Agrega un hover a los enlaces para que cambien de color al pasar el mouse.
+        Opcional: incluye una sombra en las imágenes y un borde redondeado.
+        El límite es tu imaginación, si deseas agregar una nueva sección, un nuevo estilo, no hay ningún problema.
+
+PBI'S: 2-Mejora del layout utilizando CSS Flexbox y Grid
+    *Como usuario quiero mejorar el diseño visual del portafolio mediante la implementación de tecnicas de maquetación
+     moderna para lograr una distribución más organizada, clara y profesional. Esto me permitira mejorar la experiencia
+     de navegacion del usuario
+     
+    Dado que el usuario necesita la mejora visual en la sección de mascotas
+    Cuando el usuario ingrese a la pagina y explore las seeciones de la pagina
+    Entonces el sistema debe mostrar una arquitectura que basado en los conceptos de CCS Flexbox y CCS Grid Layaout
+    
+    Dado que el usuario necesita un mejor diseño 
+
+
+
+
+   

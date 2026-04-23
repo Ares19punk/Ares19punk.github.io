@@ -9,7 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Eduardo Pérez</title>
     <link rel="shortcut icon" href="./img/images.png">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/navegacion.css">
+    <link rel="stylesheet" href="./src/css/presentacion.css">
+    <link rel="stylesheet" href="./src/css/intereses.css">
+    <link rel="stylesheet" href="./src/css/proyectos.css">
+    <link rel="stylesheet" href="./src/css/formularios.css">
 </head>
 
 <body>
@@ -27,17 +34,17 @@
     <!--Menu de navegación-->
     <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#intereses">Ver intereses</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#intereses">INTERESES</a></li>
             <li><a href="#proyectos">PROYECTOS</a></li>
-            <li><a href="#enlace">Ver enlace</a></li>
+            <li><a href="#enlace">ENLACES</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
-            <li><a href="src/view/mascotas.html">Mascotas</a></li>
+            <li><a href="src/view/mascotas.html">MASCOTAS</a></li>
         </ul>
     </nav>
     <!--Contenido principal de la pagina web-->
     <main>
-        <section id="presentacion">
+        <section id="presentacion" class="fondo-punk3">
             <div id="div1">
                 <img src="./public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk"
                     width="268" id="eduardo-cyberpunk">
@@ -50,7 +57,7 @@
                 </p>
             </div>
         </section>
-        <section id="intereses">
+        <section id="intereses" class="fondo-punk">
             <h2>Mis intereses</h2>
             <img class="insignia-intereses" src="./public/img/insignia1.png" alt="insignia cyberpunk">
             <p class="texto-intereses">Estas son las aréas que despiertan mi curiosidad, fortalecen mi motivación
@@ -60,28 +67,29 @@
                 <article class="tarjeta-cyber interes-card">
                     <span id="boton-interes1" class="boton-cyber">INTERES 01</span>
                     <h3>Programación y desarrollo</h3>
-                    <p>Me apasiona construir soluciones usando Python, Java y JavaScript, con enfoque en lógica,
-                        automatización y desarrollo web.</p>
+                    <p>Me apasiona desarrollar soluciones con Python, Java y JavaScrit, aplicando logica
+                        automatización y desarrollo web para crear proyectos funcionales e innovadores.
+                    </p>
                 </article>
 
                 <article class="tarjeta-cyber interes-card">
                     <span id="boton-interes2" class="boton-cyber">INTERES 02</span>
                     <h3>Inteligencia artificial y sistemas</h3>
-                    <p>Me interesa la automatización de procesos, la inteligencia artificial aplicada y el desarrollo de
-                        sistemas tecnológicos útiles.</p>
+                    <p>Me interesa la automatización de procesos, la inteligencia artificial aplicada
+                        y desarrollo de sistemas tecnologicos.</p>
                 </article>
 
                 <article class="tarjeta-cyber interes-card">
                     <span id="boton-interes3" class="boton-cyber">INTERES 03</span>
                     <h3>Estética cyberpunk y ciencia ficción</h3>
-                    <p>Me atraen las interfaces futuristas, los mundos de ciencia ficción, la tecnología visual y el
-                        diseño con identidad cyberpunk.</p>
+                    <p>Me atraen las interfaces futuristas, los mundos inspirados en la ciencia ficción la
+                        tecnología visual y el diseño con identidad cyberpunk.</p>
                 </article>
             </div>
         </section>
 
         <!--Contenido de Proyectos-->
-        <section id="proyectos">
+        <section id="proyectos" class="fondo-punk">
             <h2>Mis proyectos</h2>
 
             <div class="proyectos-grid">
@@ -97,7 +105,7 @@
                     <span id="boton2" class="boton-cyber">AUTOMATIZACIÓN</span>
                     <img src="public/img/sistema-automatización.png" alt="Vista previa de automatización con IA">
                     <h3>Sistema de Automatización con IA</h3>
-                    <p>Automatizacion de procesos de gestión en la industria</p>
+                    <p>Automatización de procesos de gestión en la industria</p>
                 </article>
 
                 <article class="tarjeta-cyber">
@@ -110,39 +118,57 @@
 
             </div>
         </section>
-        <section>
+        <section id="section-lenguaje" class="fondo-punk4">
             <h2 id="aprendizaje">Mis lenguaje</h2>
             <div id="div-aprendizaje">
                 <figure>
                     <img src="./public/img/logo-python.png" alt="Logo Python">
                 </figure>
                 <figure>
-                    <img src="./public/img/logo-java.png" alt="Logo Python">
+                    <img src="./public/img/logo-java.png" alt="Logo Java">
                 </figure>
                 <figure>
-                    <img src="./public/img/logo-javascrit.png" alt="Logo Python">
+                    <img src="./public/img/logo-javascrit.png" alt="Logo JavaScript">
                 </figure>
                 <figure>
-                    <img src="./public/img/logo-ccs.png" alt="Logo Python" >
+                    <img src="./public/img/logo-ccs.png" alt="Logo CCS">
                 </figure>
                 <figure>
-                    <img src="./public/img/logo-sql.png" alt="Logo Python" >
+                    <img src="./public/img/logo-sql.png" alt="Logo SQL">
                 </figure>
                 <figure>
-                    <img src="./public/img/logo-c.png" alt="Logo C#" >
+                    <img src="./public/img/logo-c.png" alt="Logo C#">
                 </figure>
-               
+
             </div>
         </section>
-        <section>
-            <h2 id="enlace">Mis enlaces</h2>
-            <a class="enlace-navegacion" href="mascotas.html">Ver mi página de mascotas</a>
-            <div>
-                <a class="enlace-contacto" href="https://github.com/Ares19punk" target="_blank">GitHub Arespunk</a>
-                <a class="enlace-contacto" href="mailto:arespunk@ejemplo.com">Envíame un correo</a>
+        <section id="enlaces" class="fondo-punk">
+            <h2>Centro de conexiones</h2>
+            <p class="p-enlaces">
+                Accesos directos a mis espacios, proyectos y medios de contacto.
+            </p>
+
+            <div class="enlaces-grid">
+                <article class="tarjeta-cyber" clas="enlace-card">
+                    <h3>GitHub</h3>
+                    <p>Repositorio de proyectos, prácticas y desarrollos personales.</p>
+                    <a class="boton-cyber" href="https://github.com/Ares19punk" target="_blank">Explorar</a>
+                </article>
+
+                <article class="tarjeta-cyber" clas="enlace-card">
+                    <h3>Mascotas</h3>
+                    <p>Sección visual dedicada a mis animales favoritos con estética cyberpunk.</p>
+                    <a class="boton-cyber" href="src/view/mascotas.html">Abrir</a>
+                </article>
+
+                <article class="tarjeta-cyber" clas="enlace-card">
+                    <h3>Correo</h3>
+                    <p>Canal directo para contacto, ideas, proyectos o colaboraciones.</p>
+                    <a class="boton-cyber" href="mailto:arespunk@ejemplo.com">Contactar</a>
+                </article>
             </div>
         </section>
-        <section id="contacto">
+        <section id="contacto" class="fondo-punk3">
             <h2>Escribeme</h2>
             <form>
                 <div>

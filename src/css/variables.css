@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*====================VARIABLES====================*/
+:root {
+
+  --color-fondo: #0a0a0f;
+  --color-fondo-secundario: #051627;
+  --color-fondo-terciario: #0e2022;
+  --color-panel: #020f1a;
+  --color-borde: #2a2a40;
+  
+
+  --color-neon-cyan: #00f5ff;
+  --color-neon-pink: #e67db9;
+  ;
+  --color-neon-purple: #9d4edd;
+  --color-neon-green: #39ff14;
+  --color-neon-yellow: #ffe600;
+  --color-neon-orange: #fa7705;
+  --color-neon-darkblue: #107594;
+  --color-neon-green-rgba: #151715f7;
+  --color-neon-online: #16d574;
+
+  --color-texto-principal: #d86b4d;
+  --color-texto-secundario: #cdd3db;
+  --color-texto-apagado: #7a7a93;
+
+  --color-hover: #00c2ff;
+  --color-sombra-neon: 0 0 10px #00f5ff, 0 0 20px #ff00c8;
+
+  --font-title: "Orbitron", "Exo 2", "Rajdhani", sans-serif;
+  --font-system: "Share Tech Mono", "Courier New", monospace;
+  --font-terminal: "VT323", "Share Tech Mono", "Courier New", monospace;
+  --font-tech: "Audiowide", "Orbitron", sans-serif;
+}
+
+/*=================================================*/

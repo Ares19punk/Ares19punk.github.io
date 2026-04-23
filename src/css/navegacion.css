@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*=====================NAVEGACION==================*/
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-terminal);
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-neon-cyan);
+  text-shadow: 0 0 8px var(--color-neon-cyan);
+}
+
+/*=================================================*/

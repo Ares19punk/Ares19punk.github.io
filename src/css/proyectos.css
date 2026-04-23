@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*====================PROYECTOS====================*/
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tarjeta-cyber {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--color-neon-cyan);
+  border-radius: 16px;
+  background: linear-gradient(to bottom,
+      var(--color-panel),
+      var(--color-fondo-secundario));
+  box-shadow: 0 0 10px var(--color-neon-cyan);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-cyber:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px var(--color-neon-pink);
+}
+
+.tarjeta-cyber img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--color-neon-cyan);
+}
+
+.tarjeta-cyber h3 {
+  text-align: left;
+  color: var(--color-texto-secundario);
+  text-shadow: 0 0 6px var(--color-texto-secundario);
+}
+
+.tarjeta-cyber p {
+  color: var(--color-neon-pink);
+}
+
+.boton-cyber {
+  display: block;
+  width: fit-content;
+  padding: 8px 14px;
+  border: 1px solid var(--color-neon-pink);
+  border-radius: 999px;
+  background-color: var(--color-fondo-secundario);
+  color: var(--color-neon-pink);
+  text-decoration: none;
+  font-family: var(--font-system);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px var(--color-neon-pink);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.boton-cyber:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 16px var(--color-neon-cyan);
+  color: var(--color-neon-cyan);
+}
+/*=================================================*/
+
+/*=================ID ESPECIALES===================*/
+
+#boton1 {
+  color: var(--color-neon-purple);
+  box-shadow: 0 0 10px var(--color-neon-purple);
+  border: 1px solid var(--color-neon-purple);
+}
+
+#boton2 {
+  color: var(--color-neon-pink);
+  box-shadow: 0 0 10px var(--color-neon-pink);
+  border: 1px solid var(--color-neon-pink);
+}
+
+#boton3 {
+  color: var(--color-neon-orange);
+  box-shadow: 0 0 10px var(--color-neon-orange);
+  border: 1px solid var(--color-neon-orange);
+}
+

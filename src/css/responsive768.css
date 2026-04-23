@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   /* ===== LAYOUT GENERAL ===== */
   main {
     max-width: 100%;
@@ -18,7 +18,7 @@
     padding: 1rem;
   }
 
-  /* ===== HEADER ===== */
+  /*=======HEADER=======*/
   header h1 {
     font-size: 2rem;
     letter-spacing: 0.12rem;
@@ -44,6 +44,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    
   }
 
   #div1,
@@ -95,5 +96,33 @@
   input,
   textarea {
     max-width: 100%;
+  }
+
+  /* ==== PROYECTOS ==== */
+  
+  .proyectos-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* ==== INTERESES ==== */
+  
+  .intereses-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* ==== ENLACES ==== */
+  
+  .enlaces-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  #div1 img {
+    width: 70%;
   }
 }

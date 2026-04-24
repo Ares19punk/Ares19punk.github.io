@@ -3,8 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (max-width: 768px) {
+
   /* ===== LAYOUT GENERAL ===== */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   main {
     max-width: 100%;
     padding: 0 1rem;
@@ -19,6 +28,8 @@
   }
 
   /*=======HEADER=======*/
+
+
   header h1 {
     font-size: 2rem;
     letter-spacing: 0.12rem;
@@ -39,12 +50,34 @@
     font-size: 1.05rem;
   }
 
+  #menu-toggle {
+    display: flex;
+    box-shadow: none;
+    text-shadow: 0 0 14px var(--color-neon-online);
+    border: 1px solid var(--color-neon-online);
+    color: var(--color-neon-online);
+    
+  }
+
+  #menu-toggle:hover{
+    background-color: var(--color-panel);
+    box-shadow: 0 0 14px var(--color-neon-online);
+  }
+
+  #navegador {
+    display: none;
+  }
+
+  #navegador.mostrar {
+    display: flex;
+  }
+ 
   /* ===== PRESENTACIÓN ===== */
   #presentacion {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-    
+
   }
 
   #div1,
@@ -99,29 +132,29 @@
   }
 
   /* ==== PROYECTOS ==== */
-  
+
   .proyectos-grid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
   /* ==== INTERESES ==== */
-  
+
   .intereses-grid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
   /* ==== ENLACES ==== */
-  
+
   .enlaces-grid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
   #div1 img {
     width: 70%;
   }

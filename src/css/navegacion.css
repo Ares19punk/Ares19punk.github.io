@@ -5,6 +5,8 @@
 }
 /*=====================NAVEGACION==================*/
 
+
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -31,6 +33,11 @@ nav a {
 nav a:hover {
   color: var(--color-neon-cyan);
   text-shadow: 0 0 8px var(--color-neon-cyan);
+  border: ;
 }
+
+#menu-toggle {
+    display: none;
+  }
 
 /*=================================================*/

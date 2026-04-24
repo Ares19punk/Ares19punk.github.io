@@ -74,7 +74,7 @@ textarea:focus {
 }
 
 input:focus {
-  outline: 2px solid var(--color-neon-pink);
+  outline: 1px solid var(--color-neon-pink);
 }
 
 /*=================================================*/

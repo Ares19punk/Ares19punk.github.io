@@ -2,204 +2,296 @@
 <html lang="es">
 
 <head>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Eduardo Pérez</title>
-    <link rel="shortcut icon" href="./img/images.png">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/navegacion.css">
-    <link rel="stylesheet" href="./src/css/presentacion.css">
-    <link rel="stylesheet" href="./src/css/intereses.css">
-    <link rel="stylesheet" href="./src/css/proyectos.css">
-    <link rel="stylesheet" href="./src/css/formularios.css">
-    <link rel="stylesheet" href="./src/css/responsive768.css">
-
+    <meta name="description"
+        content="Portafolio de Eduardo Pérez López, desarrollador de software enfocado en automatización, inteligencia artificial y sistemas empresariales.">
+    <meta name="theme-color" content="#070b14">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eduardo Pérez — Desarrollador de software">
+    <meta property="og:description"
+        content="Software, automatización e inteligencia artificial con una identidad visual diferente.">
+    <meta property="og:image" content="https://ares19punk.github.io/public/img/Eduardo_cyberpunk.png">
+    <meta property="og:url" content="https://ares19punk.github.io/">
+    <title>Eduardo Pérez | Desarrollador de software</title>
+    <link rel="icon" href="./public/img/images.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/portfolio.css">
+    <script src="./src/js/main.js" defer></script>
 </head>
 
 <body>
-    <!--Aquí va el encabezado de la pagina web-->
-    <header>
-        <div>
-            <h1>@EDUARDO PÉREZ LÓPEZ</h1>
-            <h2><span> ● ONLINE</span></h2>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span class="brand-mark">EP</span>
+                <span class="brand-copy">
+                    <strong>Eduardo Pérez</strong>
+                    <small>Software developer</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Abrir menú de navegación">
+                <span></span><span></span>
+            </button>
+
+            <nav id="main-nav" aria-label="Navegación principal">
+                <a href="#perfil">Perfil</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a class="nav-cta" href="#contacto">Hablemos</a>
+            </nav>
         </div>
-        <figure>
-
-        </figure>
-
     </header>
-    <!--Menu de navegación-->
-    <nav>
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="#intereses">INTERESES</a></li>
-            <li><a href="#proyectos">PROYECTOS</a></li>
-            <li><a href="#enlace">ENLACES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-            <li><a href="src/view/mascotas.html">MASCOTAS</a></li>
-        </ul>
-    </nav>
-    <!--Contenido principal de la pagina web-->
-    <main>
-        <section id="presentacion" class="fondo-punk3">
-            <div id="div1">
-                <img src="./public/img/Eduardo_cyberpunk.png" alt="Eduardo Programando en un entorno cyberpunk"
-                    width="268" id="eduardo-cyberpunk">
-            </div>
-            <div id="div2">
-                <p>Hola, soy Eduardo, programador apasionado por la tecnologia cyberpunk, la automatización y las
-                    tecnologías inspiradas en la ciencia ficción. Me gusta desarrollar soluciones con un enfoque
-                    creativo e innovador, y mis lenguajes de programación favoritos son Python y Java, dos de los
-                    lenguajes con los que me identifico.
-                </p>
-            </div>
-        </section>
-        <section id="intereses" class="fondo-punk">
-            <h2>Mis intereses</h2>
-            <img class="insignia-intereses" src="./public/img/insignia1.png" alt="insignia cyberpunk">
-            <p class="texto-intereses">Estas son las aréas que despiertan mi curiosidad, fortalecen mi motivación
-                y me impulsan a convertir mi realidad de todo aquello que imagino
-            </p>
-            <div class="intereses-grid">
-                <article class="tarjeta-cyber interes-card">
-                    <span id="boton-interes1" class="boton-cyber">INTERES 01</span>
-                    <h3>Programación y desarrollo</h3>
-                    <p>Me apasiona desarrollar soluciones con Python, Java y JavaScrit, aplicando logica
-                        automatización y desarrollo web para crear proyectos funcionales e innovadores.
-                    </p>
-                </article>
 
-                <article class="tarjeta-cyber interes-card">
-                    <span id="boton-interes2" class="boton-cyber">INTERES 02</span>
-                    <h3>Inteligencia artificial y sistemas</h3>
-                    <p>Me interesa la automatización de procesos, la inteligencia artificial aplicada
-                        y desarrollo de sistemas tecnologicos.</p>
-                </article>
+    <main id="contenido">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevos retos</p>
+                    <h1 id="hero-title">Construyo software que convierte <span>ideas</span> en sistemas útiles.</h1>
+                    <p class="hero-lead">Soy Eduardo, desarrollador enfocado en automatización, inteligencia artificial
+                        y soluciones empresariales. Combino lógica, creatividad y una estética tecnológica propia.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#proyectos">Explorar proyectos <span
+                                aria-hidden="true">↘</span></a>
+                        <a class="button button-secondary" href="https://github.com/Ares19punk" target="_blank"
+                            rel="noopener noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <ul class="hero-stack" aria-label="Tecnologías principales">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
 
-                <article class="tarjeta-cyber interes-card">
-                    <span id="boton-interes3" class="boton-cyber">INTERES 03</span>
-                    <h3>Estética cyberpunk y ciencia ficción</h3>
-                    <p>Me atraen las interfaces futuristas, los mundos inspirados en la ciencia ficción la
-                        tecnología visual y el diseño con identidad cyberpunk.</p>
-                </article>
+                <div class="hero-visual reveal reveal-delay">
+                    <div class="portrait-frame">
+                        <div class="portrait-toolbar" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                            <small>profile_eduardo.jpg</small>
+                        </div>
+                        <img src="./public/img/Eduardo_cyberpunk.png"
+                            alt="Retrato de Eduardo Pérez en un entorno urbano futurista" width="1024" height="1280">
+                        <div class="portrait-caption">
+                            <span>Ubicación</span>
+                            <strong>Colombia · UTC−5</strong>
+                        </div>
+                    </div>
+                    <div class="code-card" aria-hidden="true">
+                        <span>01</span>
+                        <p><b>if</b> idea:<br>&nbsp;&nbsp;build_solution()</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!--Contenido de Proyectos-->
-        <section id="proyectos" class="fondo-punk">
-            <h2>Mis proyectos</h2>
-
-            <div class="proyectos-grid">
-
-                <article class="tarjeta-cyber">
-                    <span id="boton1" class="boton-cyber">INVENTARIO</span>
-                    <img src="public/img/Inventario-cyber.png" alt="Vista previda de proyecto Inventario-cyber">
-                    <h3>Sistema de Inventarios tecnologicos</h3>
-                    <p>Inventario tecnologico para seguimiento de ventas</p>
-                </article>
-
-                <article class="tarjeta-cyber">
-                    <span id="boton2" class="boton-cyber">AUTOMATIZACIÓN</span>
-                    <img src="public/img/sistema-automatización.png" alt="Vista previa de automatización con IA">
-                    <h3>Sistema de Automatización con IA</h3>
-                    <p>Automatización de procesos de gestión en la industria</p>
-                </article>
-
-                <article class="tarjeta-cyber">
-                    <span id="boton3" class="boton-cyber">IA</span>
-                    <img src="public/img/sistema-gestion-empresarial.png"
-                        alt="Vista previda de proyecto de sistema gestión integral empresarial">
-                    <h3>Sistema de gestión integral empresarial</h3>
-                    <p>Gestión integral de procesos empresariales asistidos con IA</p>
-                </article>
-
+        <section class="signal-strip" aria-label="Resumen profesional">
+            <div class="container signal-grid">
+                <div><strong>03</strong><span>conceptos de producto</span></div>
+                <div><strong>06</strong><span>tecnologías en mi stack</span></div>
+                <div><strong>∞</strong><span>curiosidad por aprender</span></div>
+                <p>Diseño con intención.<br>Desarrollo con lógica.</p>
             </div>
         </section>
-        <section id="section-lenguaje" class="fondo-punk4">
-            <h2 id="aprendizaje">Mis lenguaje</h2>
-            <div id="div-aprendizaje">
-                <figure>
-                    <img src="./public/img/logo-python.png" alt="Logo Python">
-                </figure>
-                <figure>
-                    <img src="./public/img/logo-java.png" alt="Logo Java">
-                </figure>
-                <figure>
-                    <img src="./public/img/logo-javascrit.png" alt="Logo JavaScript">
-                </figure>
-                <figure>
-                    <img src="./public/img/logo-ccs.png" alt="Logo CCS">
-                </figure>
-                <figure>
-                    <img src="./public/img/logo-sql.png" alt="Logo SQL">
-                </figure>
-                <figure>
-                    <img src="./public/img/logo-c.png" alt="Logo C#">
-                </figure>
 
+        <section class="section profile-section" id="perfil" aria-labelledby="perfil-title">
+            <div class="container two-column">
+                <div class="section-heading reveal">
+                    <p class="section-index">01 / PERFIL</p>
+                    <h2 id="perfil-title">Tecnología con propósito y una identidad propia.</h2>
+                </div>
+                <div class="profile-copy reveal">
+                    <p class="profile-intro">Me interesa crear herramientas que resuelvan problemas reales sin perder
+                        de vista la experiencia de las personas que las usan.</p>
+                    <p>Trabajo especialmente con Python y Java, y continúo ampliando mis capacidades en desarrollo web,
+                        bases de datos, automatización e inteligencia artificial aplicada.</p>
+                    <div class="principles">
+                        <article>
+                            <span>01</span>
+                            <h3>Claridad</h3>
+                            <p>Sistemas comprensibles, mantenibles y centrados en el objetivo.</p>
+                        </article>
+                        <article>
+                            <span>02</span>
+                            <h3>Evolución</h3>
+                            <p>Aprendizaje continuo para convertir nuevas ideas en mejores soluciones.</p>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="enlaces" class="fondo-punk">
-            <h2>Centro de conexiones</h2>
-            <p class="p-enlaces">
-                Accesos directos a mis espacios, proyectos y medios de contacto.
-            </p>
 
-            <div class="enlaces-grid">
-                <article class="tarjeta-cyber" clas="enlace-card">
-                    <h3>GitHub</h3>
-                    <p>Repositorio de proyectos, prácticas y desarrollos personales.</p>
-                    <a class="boton-cyber" href="https://github.com/Ares19punk" target="_blank">Explorar</a>
-                </article>
+        <section class="section expertise-section" id="especialidades" aria-labelledby="especialidades-title">
+            <div class="container">
+                <div class="section-heading horizontal reveal">
+                    <div>
+                        <p class="section-index">02 / ESPECIALIDADES</p>
+                        <h2 id="especialidades-title">Donde concentro mi energía.</h2>
+                    </div>
+                    <p>Áreas que conectan pensamiento técnico, optimización y diseño de experiencias digitales.</p>
+                </div>
 
-                <article class="tarjeta-cyber" clas="enlace-card">
-                    <h3>Mascotas</h3>
-                    <p>Sección visual dedicada a mis animales favoritos con estética cyberpunk.</p>
-                    <a class="boton-cyber" href="src/view/mascotas.html">Abrir</a>
-                </article>
-
-                <article class="tarjeta-cyber" clas="enlace-card">
-                    <h3>Correo</h3>
-                    <p>Canal directo para contacto, ideas, proyectos o colaboraciones.</p>
-                    <a class="boton-cyber" href="mailto:arespunk@ejemplo.com">Contactar</a>
-                </article>
+                <div class="expertise-grid">
+                    <article class="expertise-card reveal">
+                        <span class="card-number">01</span>
+                        <div class="card-symbol" aria-hidden="true">&lt;/&gt;</div>
+                        <h3>Desarrollo de software</h3>
+                        <p>Construcción de soluciones funcionales con buenas bases, lógica clara y una interfaz cuidada.
+                        </p>
+                        <ul>
+                            <li>Aplicaciones web</li>
+                            <li>Python y Java</li>
+                            <li>Bases de datos</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card reveal reveal-delay">
+                        <span class="card-number">02</span>
+                        <div class="card-symbol" aria-hidden="true">AI</div>
+                        <h3>IA y automatización</h3>
+                        <p>Exploración de procesos inteligentes para reducir tareas repetitivas y mejorar decisiones.</p>
+                        <ul>
+                            <li>Flujos automáticos</li>
+                            <li>Análisis de datos</li>
+                            <li>Procesos asistidos</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card reveal reveal-delay-two">
+                        <span class="card-number">03</span>
+                        <div class="card-symbol" aria-hidden="true">UX</div>
+                        <h3>Interfaces con carácter</h3>
+                        <p>Experiencias inspiradas en la ciencia ficción, sin sacrificar legibilidad ni usabilidad.</p>
+                        <ul>
+                            <li>Diseño responsive</li>
+                            <li>Sistemas visuales</li>
+                            <li>Accesibilidad</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
         </section>
-        <section id="contacto" class="fondo-punk3">
-            <h2>Escribeme</h2>
-            <form>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Escribe tu nombre..." name="nombre" required>
-                </div>
-                <div>
-                    <label for="numero">Número:</label>
-                    <input type="number" id="numero" placeholder="Escribe tu numero..." name="numero" required>
-                </div>
-                <div>
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" placeholder="Escribe tu correo..." name="correo" required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" placeholder="Escribe tu mensaje..." name="mensaje" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
+
+        <section class="section projects-section" id="proyectos" aria-labelledby="proyectos-title">
+            <div class="container">
+                <div class="section-heading horizontal reveal">
+                    <div>
+                        <p class="section-index">03 / PROYECTOS</p>
+                        <h2 id="proyectos-title">Ideas llevadas a una visión de producto.</h2>
+                    </div>
+                    <a class="text-link" href="https://github.com/Ares19punk" target="_blank"
+                        rel="noopener noreferrer">Todos los repositorios <span aria-hidden="true">↗</span></a>
                 </div>
 
-            </form>
+                <div class="projects-list">
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="./public/img/Inventario-cyber.png"
+                                alt="Composición visual de un sistema de inventario tecnológico" loading="lazy">
+                            <span>Concepto 01</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-type">Inventarios · Operaciones</p>
+                            <h3>Sistema de inventario tecnológico</h3>
+                            <p>Propuesta para centralizar productos, movimientos y seguimiento de ventas en una
+                                experiencia clara y fácil de consultar.</p>
+                            <div class="project-tags"><span>Gestión</span><span>Datos</span><span>Dashboard</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card-reverse reveal">
+                        <div class="project-image">
+                            <img src="./public/img/sistema-automatización.png"
+                                alt="Panel conceptual de automatización empresarial asistida por inteligencia artificial"
+                                loading="lazy">
+                            <span>Concepto 02</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-type">Automatización · Inteligencia artificial</p>
+                            <h3>Auditoría inteligente de procesos</h3>
+                            <p>Sistema conceptual para conectar fuentes empresariales, detectar riesgos y transformar el
+                                análisis en acciones correctivas.</p>
+                            <div class="project-tags"><span>IA</span><span>Automatización</span><span>Analítica</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="./public/img/sistema-gestion-empresarial.png"
+                                alt="Interfaz conceptual de una plataforma de gestión empresarial" loading="lazy">
+                            <span>Concepto 03</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-type">ERP · Control empresarial</p>
+                            <h3>Gestión empresarial integral</h3>
+                            <p>Visión de una plataforma modular para coordinar compras, inventario, facturación,
+                                contabilidad y reportes desde un solo lugar.</p>
+                            <div class="project-tags"><span>ERP</span><span>Modular</span><span>Productividad</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stack-section" aria-labelledby="stack-title">
+            <div class="container stack-layout">
+                <div class="section-heading reveal">
+                    <p class="section-index">04 / HERRAMIENTAS</p>
+                    <h2 id="stack-title">Mi stack en crecimiento.</h2>
+                    <p>Una base versátil para construir, automatizar y conectar soluciones.</p>
+                </div>
+                <ul class="stack-grid reveal" aria-label="Lenguajes y tecnologías">
+                    <li><strong>PY</strong><span>Python</span></li>
+                    <li><strong>JV</strong><span>Java</span></li>
+                    <li><strong>JS</strong><span>JavaScript</span></li>
+                    <li><strong>SQL</strong><span>SQL</span></li>
+                    <li><strong>CSS</strong><span>CSS</span></li>
+                    <li><strong>C#</strong><span>C Sharp</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
+            <div class="container contact-panel reveal">
+                <div>
+                    <p class="section-index">05 / CONTACTO</p>
+                    <h2 id="contacto-title">¿Tienes una idea que vale la pena construir?</h2>
+                    <p>Estoy abierto a conversar sobre desarrollo, automatización, proyectos de aprendizaje y nuevas
+                        oportunidades.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="button button-light" href="https://github.com/Ares19punk" target="_blank"
+                        rel="noopener noreferrer">Conectar en GitHub <span aria-hidden="true">↗</span></a>
+                    <small>Respuesta y contacto disponibles a través de mi perfil.</small>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Sitio web creado por Eduardo Pérez</p>
-    </footer>
 
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <a class="brand footer-brand" href="#inicio">
+                <span class="brand-mark">EP</span>
+                <span class="brand-copy"><strong>Eduardo Pérez</strong><small>Software developer</small></span>
+            </a>
+            <p>Diseñado y desarrollado con curiosidad desde Colombia.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Ares19punk" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="./src/view/mascotas.html">Archivo personal</a>
+            </div>
+            <small>© <span id="current-year">2026</span> Eduardo Pérez López.</small>
+        </div>
+    </footer>
 </body>
 
 </html>

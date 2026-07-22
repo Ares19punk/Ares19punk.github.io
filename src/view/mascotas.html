@@ -2,76 +2,99 @@
 <html lang="es">
 
 <head>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Share+Tech+Mono&display=swap"
-        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascotas favoritas Eduardo Pérez</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/images.png">
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/navegacion.css">
-    <link rel="stylesheet" href="../css/presentacion.css">
-    <link rel="stylesheet" href="../css/intereses.css">
-    <link rel="stylesheet" href="../css/proyectos.css">
-    <link rel="stylesheet" href="../css/formularios.css">
+    <meta name="description" content="Archivo visual personal de Eduardo Pérez inspirado en animales y estética cyberpunk.">
+    <meta name="theme-color" content="#070b14">
+    <title>Archivo personal | Eduardo Pérez</title>
+    <link rel="icon" href="../../public/img/images.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <h1>Mis animales favoritos</h1>
-        <h2>Animales que admiro</h2>
+<body class="archive-body">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="../../index.html" aria-label="Volver al portafolio">
+                <span class="brand-mark">EP</span>
+                <span class="brand-copy"><strong>Eduardo Pérez</strong><small>Archivo personal</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Abrir menú de navegación"><span></span><span></span></button>
+            <nav id="main-nav" aria-label="Navegación principal">
+                <a href="../../index.html">Portafolio</a>
+                <a href="#galeria">Galería</a>
+                <a class="nav-cta" href="https://github.com/Ares19punk" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="mascotas.html">Mascotas</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <p>Los animales siempre me han gustado sobre todo los lobos y las aves. Son especies fascinantes</p>
-            <p>Los lobos nos enseñan a convivir en manada y apoyarnos entre familia, mientras que las aves
-                nos enseñan libertad y que podemos volar lejos en las metas que nos propongamos.</p>
-        </section>
-        <section>
-            <h2>Mis animales favoritos</h2>
-            <ul>
-                <li>Lobo</li>
-                <li>Canario</li>
-                <li>Zorro</li>
-            </ul>
-        </section>
-        <section id="pet" class="mascota">
-            <h2>Mi animal favorito</h2>
-            <figure>
-                <div class="resaltar-imagen">
-                    <img class="resaltar-imagen1" src="../../public/img/lobo.png" alt="Lobo con estetica Cyberpunk"
-                        height="300">
-                    <figcaption>Lobo Alberto.</figcaption>
+
+    <main id="contenido">
+        <section class="archive-hero" id="inicio" aria-labelledby="archive-title">
+            <div class="container archive-hero-grid">
+                <div class="reveal">
+                    <p class="section-index">ARCHIVO / 001</p>
+                    <h1 id="archive-title">Instinto, libertad y estética cyberpunk.</h1>
                 </div>
-                <div class="resaltar-imagen">
-                    <img src="../../public/img/zorro.png" alt="Lobo con estetica Cyberpunk" height="300">
-                    <figcaption>Zorro Collins.</figcaption>
+                <div class="archive-intro reveal reveal-delay">
+                    <p>Un pequeño espacio personal dedicado a los animales que admiro. Los lobos representan la unión;
+                        las aves, la libertad; y cada criatura aporta una forma distinta de mirar el mundo.</p>
+                    <a class="text-link" href="../../index.html"><span aria-hidden="true">←</span> Volver al portafolio</a>
                 </div>
-                <div class="resaltar-imagen">
-                    <img src="../../public/img/canario.png" alt="Lobo con estetica Cyberpunk" height="300">
-                    <figcaption>Canario Parker.</figcaption>
-                </div>
-                <div class="resaltar-imagen">
-                    <img src="../../public/img/dinosaurio.png" alt="Lobo con estetica Cyberpunk" height="300">
-                    <figcaption>Dino Eucalipto.</figcaption>
-                </div>
-            </figure>
+            </div>
         </section>
 
+        <section class="archive-gallery section" id="galeria" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-heading horizontal reveal">
+                    <div>
+                        <p class="section-index">COLECCIÓN VISUAL</p>
+                        <h2 id="gallery-title">Mi manada digital.</h2>
+                    </div>
+                    <p>Personajes nacidos de la mezcla entre naturaleza, imaginación y luces de una ciudad futura.</p>
+                </div>
+                <div class="animal-grid">
+                    <figure class="animal-card animal-card-featured reveal">
+                        <img src="../../public/img/lobo.png" alt="Lobo con estética cyberpunk" loading="lazy">
+                        <figcaption><span>01 / LOBO</span><strong>Alberto</strong></figcaption>
+                    </figure>
+                    <figure class="animal-card reveal reveal-delay">
+                        <img src="../../public/img/zorro.png" alt="Zorro con estética cyberpunk" loading="lazy">
+                        <figcaption><span>02 / ZORRO</span><strong>Collins</strong></figcaption>
+                    </figure>
+                    <figure class="animal-card reveal">
+                        <img src="../../public/img/canario.png" alt="Canario con estética cyberpunk" loading="lazy">
+                        <figcaption><span>03 / CANARIO</span><strong>Parker</strong></figcaption>
+                    </figure>
+                    <figure class="animal-card animal-card-wide reveal reveal-delay">
+                        <img src="../../public/img/dinosaurio.png" alt="Dinosaurio con estética cyberpunk" loading="lazy">
+                        <figcaption><span>04 / DINOSAURIO</span><strong>Eucalipto</strong></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>Páginas de mascotas de Eduardo Pérez</p>
-    </footer>
 
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <a class="brand footer-brand" href="../../index.html">
+                <span class="brand-mark">EP</span>
+                <span class="brand-copy"><strong>Eduardo Pérez</strong><small>Software developer</small></span>
+            </a>
+            <p>Una pausa creativa dentro de mi portafolio.</p>
+            <div class="footer-links"><a href="../../index.html">Portafolio</a><a href="#inicio">Volver arriba</a></div>
+            <small>© <span id="current-year">2026</span> Eduardo Pérez López.</small>
+        </div>
+    </footer>
 </body>
 
 </html>
